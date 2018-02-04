@@ -23,19 +23,26 @@ conflicts and always have stable code. You can also share your projects with oth
 
 4.) What is the purpose of adding a remote to a local git repository?
 
-5.) How do you print a message to the console? System.out.print("messagehere");
+5.) How do you print a message to the console?
+ System.out.println("messagehere");
 
-6.) Where does a program begin its execution? main method unless otherwise specified
+6.) Where does a program begin its execution?
+ main method unless otherwise specified
 
-7.) What is a code block and how do you create one? Its code that is all contained to the block. Use {} to make a block.
+7.) What is a code block and how do you create one?
+Its code that is all contained to the block as far as what it i. Use {} to make a block.
 
 8.) What is the idea of variable scope?
-
+It means where the variable is contained and accessible or not to other objects
 9.) What are semicolons used for?
+signify the end of a statement
 
 10.) What are lines of code indented? When should a line be indented?
+Its used for read ability mostly. Indent so you are 4 spaces more indented than the indentation of
+ the block containing objects declaration. The compiler doesnt see white space.
 
 11.) What does a .java file need to be complied to a .class file before running?
+So it is in bytecode that the jvm can understand and run
 
 
 

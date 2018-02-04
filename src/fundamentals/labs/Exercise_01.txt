@@ -21,4 +21,79 @@ Fundamentals Exercise 1: CLI
 Example Output (pwd):
     1. Cadens-MacBook-Pro:CodingNomads cadenmackenzie$ pwd
        /Users/cadenmackenzie/Documents/CodingNomads
+1.
+➜ ~  $  cd Desktop/CodingNomadsOnlineLabs/
+➜ ~/Desktop/CodingNomadsOnlineLabs  $
 
+2.
+➜ ~/Desktop/CodingNomadsOnlineLabs  $  ls -al
+total 16
+drwxr-xr-x 4 mint mint 4096 Feb  4 14:24 .
+drwxr-xr-x 8 mint mint 4096 Feb  3 14:50 ..
+drwxr-xr-x 6 mint mint 4096 Feb  3 15:46 online_java_labs
+drwxr-xr-x 2 mint mint 4096 Feb  4 14:24 Terminal_testing
+
+3.
+➜ ~/Desktop/CodingNomadsOnlineLabs  $  cd Terminal_testing/
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing  $  touch newtxt1.txt
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing  $  ls -al
+total 8
+drwxr-xr-x 2 mint mint 4096 Feb  4 14:26 .
+drwxr-xr-x 4 mint mint 4096 Feb  4 14:24 ..
+-rw-r--r-- 1 mint mint    0 Feb  4 14:26 newtxt1.txt
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing  $  touch newtxt2.txt
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing  $  touch newtxt3.txt
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing  $  ls -al
+total 8
+drwxr-xr-x 2 mint mint 4096 Feb  4 14:26 .
+drwxr-xr-x 4 mint mint 4096 Feb  4 14:24 ..
+-rw-r--r-- 1 mint mint    0 Feb  4 14:26 newtxt1.txt
+-rw-r--r-- 1 mint mint    0 Feb  4 14:26 newtxt2.txt
+-rw-r--r-- 1 mint mint    0 Feb  4 14:26 newtxt3.txt
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing  $  pwd
+/home/mint/Desktop/CodingNomadsOnlineLabs/Terminal_testing
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing  $
+
+5.
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing  $  mkdir newFolder
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing  $  ls
+newFolder  newtxt1.txt  newtxt2.txt  newtxt3.txt
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing  $
+
+6.
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing  $  mkdir newFolder
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing  $  ls
+newFolder  newtxt1.txt  newtxt2.txt  newtxt3.txt
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing  $
+
+7.
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing  $  mv newtxt2.txt newFolder/
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing  $  ls
+newFolder  newtxt1.txt  newtxt3.txt
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing  $  cd newFolder
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing/newFolder  $  ls
+newtxt1.txt  newtxt2.txt
+
+8.
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing/newFolder  $  rm -rf newtxt1.txt
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing/newFolder  $  ls
+newtxt2.txt
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing/newFolder  $  cd ..
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing  $  rm -rf newFolder/
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing  $  ls
+newtxt1.txt  newtxt3.txt
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing  $
+
+9.
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing  $  vim newtxt1.txt
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing  $  cat newtxt1.txt
+Fundamentals Exercise 01
+Step 9. Challenge:
+         a. Use $ vim to write some text inside a file
+         b. Use $ cat print contents of file
+         c. Use $ grep to search for a word inside file
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing  $  grep "file" newtxt1.txt
+         a. Use $ vim to write some text inside a file
+         b. Use $ cat print contents of file
+         c. Use $ grep to search for a word inside file
+➜ ~/Desktop/CodingNomadsOnlineLabs/Terminal_testing  $

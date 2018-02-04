@@ -23,7 +23,11 @@ public class Exercise_05 {
         // assign input to variable as int
         int days = scanner.nextInt();
 
-        // write completed code here
+        if(days > 0 && days <= 1000000000){
+            int seconds = days * 24 * 60 * 60;
+
+            System.out.println(days + " days is equivalent to " + seconds + " seconds.");
+        }
 
     }
 }

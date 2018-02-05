@@ -2,34 +2,57 @@ Answer the following questions:
 
 
 1.) What are the names and uses of Java's eight primitive types?
+int: integer Giving you signed whole number values 32 bits in size. –2,147,483,648 to 2,147,483,647 are valid.
+short: Short integer Giving you signed whole number values 16 bits in size. -32,768 to 32,767 values are valid.
+byte: 8-bit integer  Giving you signed whole number values 8 bits in size. -128 to 127 are valid values.
+long: Long integer  Giving you signed whole number values 64 bits in size. –9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 are valid values.
+boolean: this is used to represent a true or false value. It is either true or false.
+char: Character, is an unsigned 16 bit values used to represent a Unicode character. 0 to 65536 are valid values to represent a Unicode character.
+float: A single precision floating point number that is 32 bits in length. Use to rep values with fractional value. need an 'f' at the end to signify value is a float too and not double.
+double: double precision floating point number. Like float but 64 bits and used more due to methods in Math often requiring doubles as input.
 
 2.) How do you declare and initialize an int variable called "x" with the value 42.
+int x = 42;
 
 3.) What happens if you initialize a double variable with the value of a int?
+It adds a decimal place. 5 becomes 5.0 for example
+
 
 4.) How do you set an int variable to the value of a double?
+cast to int to a double. (double) var1
 
 5.) What are the 5 arithmetic operators?
++,-,*,/,%
 
 6.) What are Relational operators used for? What is the result of using a relational operator?
+Result is true or false. to check the relationship between values. greater, less than, equal to, etc
 
 7.) Demonstrate the use of a Relational operator.
+ 7<8
 
 8.) What logical operators used for? What is the result of using a logical operator?
+result is boolean true or false. Also used to check relationships between values. Go with relational operators often.
 
 9.) Demonstrate the use of a logical operator.
+7>6 && 8<15. This would be boolean true.
 
 10.) How can you use the shorthand addition operator to add 10 to a variable "x"?
+x += 10;
 
 11.) What data type is a String?
+a Class? which is an Object?
 
 12.) Are string mutable?
+No, cannot change after creating
 
 13.) How do you concatenate Strings?
+with a +. string1 + string2 would append the string2 content to the end of string1
 
 14.) Can you cast and int to a String or a String to an int? Why or why not?
+No, neither. They are not in the same object hierarchy. can use the toString() method on int though to do what you probably intend.
 
 15.) What is an array?
+
 
 16.) What is the first index of an array?
 

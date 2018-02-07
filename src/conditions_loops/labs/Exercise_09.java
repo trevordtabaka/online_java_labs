@@ -8,4 +8,19 @@ package conditions_loops.labs;
  */
 
 public class Exercise_09 {
+
+    public static void main(String[] Args){
+        int i = 0;
+        boolean flag = false;
+        while(!flag){
+            System.out.println("i equals: " + i);
+            if(i == 4){
+                System.out.println("Done at 4");
+                flag = true;
+            }
+
+            i++;
+        }
+
+    }
 }

@@ -20,4 +20,32 @@ package conditions_loops.labs;
  */
 
 public class Exercise_11 {
+
+    public static void main(String[] Args){
+
+        for(int i = 1; i <= 10; i++) {
+
+            for(int j = 1; j <= 10; j++) {
+
+                int product = i*j;
+                System.out.print(product);
+
+                if(j<10){
+                    if(product < 10){
+                        System.out.print(" |");
+                    }else{
+                        System.out.print("|");
+                    }
+                }else if (product < 100) {
+                        System.out.println(" |");
+                    }else{
+                        System.out.println("|");
+                    }
+
+
+            }
+        }
+
+    }
+
 }

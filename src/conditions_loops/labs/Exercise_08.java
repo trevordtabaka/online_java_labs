@@ -8,4 +8,14 @@ package conditions_loops.labs;
  */
 
 public class Exercise_08 {
+
+    public static void main(String[] Args){
+        int tusind = 1000;
+        do{
+            System.out.println(tusind);
+            tusind -= 3;
+        }while(tusind > 0);
+
+    }
+
 }

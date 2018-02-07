@@ -1,5 +1,7 @@
 package conditions_loops.labs;
 
+import java.util.Scanner;
+
 /**
  * Conditions and Loops Exercise 5: Calculator
  *
@@ -16,4 +18,36 @@ package conditions_loops.labs;
  */
 
 public class Exercise_05 {
+
+    public static void main(String[] Args){
+
+        System.out.println("Enter a + number below to be your lower bounds.");
+        Scanner scanner1 = new Scanner(System.in);
+        int lowerBounds = scanner1.nextInt();
+
+        System.out.println("Enter a + number below to be your upper bounds. Be reasonable.");
+        Scanner scanner2 = new Scanner(System.in);
+        int upperBounds = scanner2.nextInt();
+        int sum = 0;
+        double avg;
+        int count = 0;
+        for(int i = lowerBounds; i<= upperBounds; i++){
+
+            count++;
+            sum += i;
+            if(i == upperBounds){
+                avg = (double) sum / count;
+                System.out.println("The sum of the numbers from " + lowerBounds + " to " + upperBounds + " is: " + sum);
+                System.out.println("The average is " + avg);
+            break;
+            }
+
+        }
+
+
+
+
+
+
+    }
 }

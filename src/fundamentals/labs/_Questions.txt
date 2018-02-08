@@ -20,8 +20,12 @@ conflicts and always have stable code. You can also share your projects with oth
 
 3.) What is the general flow of git?
 
+add changes
+commit changes
+push changes 
 
 4.) What is the purpose of adding a remote to a local git repository?
+Incase your local setup/computer crashes? Its backedup online. Also others can use or collaborate with you.
 
 5.) How do you print a message to the console?
  System.out.println("messagehere");

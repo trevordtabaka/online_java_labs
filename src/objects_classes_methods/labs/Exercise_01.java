@@ -16,4 +16,73 @@ package objects_classes_methods.labs;
  *      Cars, animals, poker games, sports teams, trees, beers, people and so on.
  */
 
+class HockeyTeam{
 
+        public static void main(String[] Args){
+
+            Goalie trevor = new Goalie("Trevor", "Butterfly", 90, 65, 175);
+            Defenseman dman1 = new Defenseman("Matthias", "2-way", 83, 80, 185);
+            Forward forward1 = new Forward("Teis", "Power Forward", 75, 95, 183);
+
+            dman1.speed = 86;
+            trevor.weightKg = 68;
+            forward1.style = "Sniper";
+            forward1.speed = dman1.speed;
+
+
+
+
+        }
+
+
+}
+
+class Goalie{
+    String name;
+    String style;
+    int speed;
+    double heightCm;
+    int weightKg;
+
+    Goalie(String name, String style, int speed, int weightKg, double heightCm){
+        this.name = name;
+        this.style = style;
+        this.speed = speed;
+        this. weightKg = weightKg;
+        this.heightCm = heightCm;
+    }
+
+
+}
+class Defenseman{
+    String name;
+    String style;
+    int speed;
+    double heightCm;
+    int weightKg;
+
+    Defenseman(String name, String style, int speed, int weightKg, double heightCm){
+        this.name = name;
+        this.style = style;
+        this.speed = speed;
+        this. weightKg = weightKg;
+        this.heightCm = heightCm;
+    }
+
+}
+class Forward{
+    String name;
+    String style;
+    int speed;
+    double heightCm;
+    int weightKg;
+
+
+    Forward(String name, String style, int speed, int weightKg, double heightCm){
+        this.name = name;
+        this.style = style;
+        this.speed = speed;
+        this. weightKg = weightKg;
+        this.heightCm = heightCm;
+    }
+}

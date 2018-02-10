@@ -3,43 +3,98 @@ Answer the following questions:
 
 1.) What is an instance variable?
 
+Instance variables are variables that get created with each instance of a class.
+So each instance has its own variable for that instance variable
+
 2.) How do you create an object of a class Vehicle?
+you have to declare and instantiate the object.
+Vehicle car; // declares there needs to be reference for this object in memory
+car = new Vehicle(); This instatiates it to the Vehicle object type
+Do it all at once: Vehicle car = new Vehicle();
 
 3.) What is a reference variable? How is it different from a primitive type?
+
 
 4.) What does it mean to pass by reference?
 
 5.) What makes up a method signature?
 
+access modifier, static or non static, return type, method name, parameters
+
 6.) Write a method signature for a method divide() that takes two ints as parameters and returns a double.
 
+private double divide(int one, int two){}
+
+or statically
+
+public static double divide(int one, int two)
+
 7.) When does a method stop executing? How can you make it terminate?
+when the last line of code is executed. By having the return called in it if not void.
 
 8.) How do you return a String from a method?
 
+you must make the return type String in the method signiture. Then, use the return <String object>;
+
 9.) What is the return type of a method that does not returns any value?
+
+Technically there is no return type for a void function as it doesnt return anything.
 
 10.) When should a method be static?
 
+When it should be shared with all instances of its containing class. The instances do not need their own copy of the method.
+
 11.) What is an example of a time you would make an instance variable static? final?
+When it is keeping track of the number of instances of a given class.
 
 12.) When a method returns a value, what needs to be done with that value?
+the value needs to be returned to the method calling the current method. And of the correct return type.
 
 13.) What is method overloading?
 
+When you have more than one method definition for different situations, i.e. sometimes you call the method
+with 1 parameter and sometimes you can call it with 2 parameters.
+
 14.) Demonstrate method overloading by writing the method signature of two overloaded methods.
+
+public void example(int one)
+public void example(int one, int two)
 
 14.) What are constructors used for?
 
+to initialize an object when it is created. Also set initial values if necessary..
+
+
 15.) If a class does not have a constructor, how does Java handle the creation of an object
 
+uses a default constructor.
+
 16.) What does a constructor that takes in two variable, make and model, for a class Vehicle look like?
+local
+Vehicle(String make, String model){
+// do things
+}
 
 17.) What is the "this" keyword used for?
 
+if local variables has the same name as a member variable, you refer to the member variable by: this.<member_variable_name>
+
 18.) What are the keywords public, private, protected used for in a class declaration? A method declaration? Variable declaration?
+
+        public means the class or method can be used globally by the program
+        private means the class and method is not visible to any code outside the class it is contained in(private class has to be nested in a class right?)
+        protected means the class or method is only visible to code in the package the class or method is in.
+
+        variable declarations do not have access modifiers.
 
 19.) What is constructor overloading?
 
+like method overloading? Create two or more constructors but they either have different number of parameters or parameter types.
+
 20.) Demonstrate constructor overloading with three overloaded constructors.
+Vehicle(){}
+Vehicle(String make){}
+Vebicle(String make, String model){}
+
+
 

@@ -9,4 +9,19 @@ package datatypes_operators.labs;
  */
 
 public class Exercise_07 {
+    public static void main(String[] args) {
+        int[][] irregArray = {
+                {1,3,5,7,9},
+                {2,4,6,8},
+        };
+
+        for(int[] i: irregArray){
+            for(int number: i){
+
+                System.out.print(number + " ");
+            }
+            System.out.println();
+        }
+    }
+
 }

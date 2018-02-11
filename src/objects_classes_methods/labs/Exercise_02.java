@@ -17,9 +17,25 @@ class League{
     private static String leagueName = "myLeague";
     private static int teamCount = 0;
     private static int maxTeams = 10;
+    private int dummyRequests = 0;
+
     String[] leagueTeams = new String[9];
 
-// 1) Start
+    public static void main(String[] args) {
+//        1)start
+        System.out.println(getTeamCount("myLeague"));
+//         1) End
+        League myLeague = new League();
+
+//          3 and 4) Start
+        myLeague.newTeamRequest("team1");
+//          3 and 4) End
+
+//          2) Start- I know its generic...
+        getDummyRequests(myLeague);
+
+    }
+
     public static String getLeagueName(){
 
 
@@ -35,15 +51,14 @@ class League{
             return 0;
         }
     }
-// End 1)
-// for 2), I dont believe this can be done?
-//  The following 2 methods satisfy both 3) and 4).. I believe
+
+
 
     public void newTeamRequest(String teamName){
 
         if(addTeam(teamName)){
 
-            System.out.println("Your admission into the league was accepted. Congratulations you are team number " + teamCount + "in the league");
+            System.out.println("Your admission into the league was accepted. Congratulations you are team number " + teamCount + " in the league");
         }else{
             System.out.println("Sorry your request to join the league has failed. The league is full");
         }
@@ -63,6 +78,31 @@ class League{
         }
 
     }
+
+    public static void getDummyRequests(League myLeague){
+
+        System.out.println("requests before " + myLeague.dummyRequests + ". I am a static method and am calling a non-static method. First there were: " + myLeague.dummyNonStatic() + " requests. Now there is : " + myLeague.dummyRequests);
+    }
+
+    public int dummyNonStatic(){
+        return dummyRequests++;
+
+    }
+
+/*    public static void verifyTeamCount(String[] leagueTeams){
+        int teamArrayCount = 0;
+
+
+        for(int i = 0; i < leagueTeams.length; i++){
+
+            if(leagueTeams[i] != null){
+                teamArrayCount++;
+
+            }
+        }
+        System.out.println(teamArrayCount);
+
+    }*/
 
 
 

@@ -21,7 +21,7 @@ public class Exercise_06 {
 
         int[][] twoDArray = new int[5][5];
         int number = 0;
-        
+
         for(int i = 0; i<twoDArray.length; i++){
 
             for(int j = 0; j<twoDArray[i].length; j++){

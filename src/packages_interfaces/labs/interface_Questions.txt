@@ -1,16 +1,32 @@
 Answer the following questions:
 
 1.) What is an interface?
+it is a classlike constructor that only contains constants and/or abstract methods. Maybe some default methds too.
 
 2.) Why are interfaces implemented?
+To specify common behavior for objects
 
 3.) What is the implement keyword used for?
-
+To make a class inherit the specified interfaces behavior. Like extends for class:
 4.) How many interfaces can class implement?
-
+You can implement as many interfaces as you want
 5.) Write a simple interface with one method.
 
+public interface footwear{
+    private char size;
+
+    public char getSize(){
+        return size
+    }
+}
+
 6.) Think of a real world application where interfaces are used. Describe it's purpose.
+
+Thinking of ice skates. There are different kinds for different activities and therefore have certain features that are specific.
+You could have an interface for skate or maybe better ice skate. Each type of skate meant for ice has to have a few certain things.
+A blade for the ice, size, securing mechanism. You could also have a parent interface to ice skate called skate.
+ Since all skates would have a size and securing mechanism, etc. Then hockey skate would implement the ice skate interface
+ and be forced to contain certain aspects including any inherited traits from a parent interface of ice skates.
 
 7.) What is wrong with the following interface?
 
@@ -19,3 +35,5 @@ Answer the following questions:
             return x + y;
         }
     }
+
+    The method must be abstract. it cannot have a body.

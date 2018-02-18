@@ -28,7 +28,7 @@ There isnt a specific limit
 
 7.) What does the finally statement do in a try/catch/finally block?
 
-
+it executes at the end regardless of if there was an exception
 
 8.) Can you nest exceptions? If so, when would you nest an exception?
 

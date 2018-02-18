@@ -1,24 +1,49 @@
 Answer the following questions:
 
 1.) What is exception handling?
+Handling in a structured and controlled way any errors that might happen during run-time
 
 2.) What is the exception hierarchy? What is the difference between the Exception class and the Error class?
+when any exception occurs, a Throwable object is created. That has 2 sub classes. Errors and Exceptions.
+Errors are usually dealing with the machine you are using and so less in our current scope of study.
+Exceptions cover the runtime issues and the checked ways to handle the exception
 
 3.) What is a try/catch?
+A way to check a block of code that you know may give you an exception of some kind
+if certain conditions happen. The try checks if it works. If it doesnt
+then it transfers duties to the catch for graceful handling
 
 4.) What exceptions have you come across thus far?
 
+I recall early on trying to manipulate characters and strings together with loops and comparing,
+ I ran into alot of exceptions dealing with java.lang and then string or other endings.
+ I do need to start looking closer to understand them...now that I do better.
+Oh ya and the file not found exception for sure.
+
 5.) How many catch statement can you have following a try?
+There isnt a specific limit
 
 6.) How many try statements can you have preceding a catch?
+1 unless it is nested
 
 7.) What does the finally statement do in a try/catch/finally block?
 
+
+
 8.) Can you nest exceptions? If so, when would you nest an exception?
+
+Yes, for instance in a case that you want a default action to a any exception
+unless it is a more specific exception you want to handle different..then nest that
+inside the first default case
 
 9.) If you want to catch an ArrayIndexOutOfBounds exception and an Exception exception,
     which should you catch first? Why?
+the Exception if it is a more minor exception to deal with to allow the program to keep
+going and maybe it prevents an ArrayIndexOutOfBounds that way.
 
 10.) How do you rethrow and exception? Why would you rethrow an exception?
+have the catch that takes in the exception also throw the exception. It will go to the next catch
+This could help you have different catches deal with different aspects of an exception
 
 11.) What is the purpose of the throws keyword?
+to throw a created object of type that is Throwable

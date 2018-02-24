@@ -1,5 +1,7 @@
 package generics.labs;
 
+import java.util.ArrayList;
+
 /**
  * Generics Exercise 1:
  *
@@ -8,3 +10,46 @@ package generics.labs;
  *          dynamic usage.
  */
 
+class Gear<T,U>{
+    T name;
+    U gearObject;
+
+    public Gear(T name, U gearObject) {
+        this.name = name;
+        this.gearObject = gearObject;
+    }
+
+    public T getName() {
+        return name;
+    }
+
+    public void setName(T name) {
+        this.name = name;
+    }
+
+    public U getGearObject() {
+        return gearObject;
+    }
+
+    public void setGearObject(U gearObject) {
+        this.gearObject = gearObject;
+    }
+
+    public T getObj1() {
+        return name;
+    }
+
+    public void setObj1(T obj1) {
+        this.name = obj1;
+    }
+
+    public U getObj2() {
+        return gearObject;
+    }
+
+    public void setObj2(U obj2) {
+        this.gearObject = obj2;
+    }
+
+
+}
